@@ -27,7 +27,7 @@ import java.util.Map;
  *
  * @author brunosette
  */
-public class ClienteDAOImplArq extends ClienteDAOImplList {
+public class ClienteDAOImplArq extends ClienteDAO {
 
     private static final String dir = BancoArqu.getCaminho() + "cliente/cliente.bd";
     private String delimitador = ";";

@@ -24,7 +24,7 @@ import java.util.List;
  *
  * @author bruno
  */
-public class AgenciaDAOImplArq extends AgenciaDAOImplList {
+public class AgenciaDAOImplArq extends AgenciaDAO {
 
     private static final String dir = BancoArqu.getCaminho() + "agencia/agencia.bd";
     private String delimitador = ";";
