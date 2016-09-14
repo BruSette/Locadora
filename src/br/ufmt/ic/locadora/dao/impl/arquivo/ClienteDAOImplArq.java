@@ -5,7 +5,7 @@
  */
 package br.ufmt.ic.locadora.dao.impl.arquivo;
 
-import br.ufmt.ic.locadora.dao.impl.list.*;
+import br.ufmt.ic.locadora.dao.*;
 
 import br.ufmt.ic.locadora.entidade.Cliente;
 import br.ufmt.ic.locadora.entidade.Endereco;
@@ -27,7 +27,7 @@ import java.util.Map;
  *
  * @author brunosette
  */
-public class ClienteDAOImplArq extends ClienteDAO {
+public class ClienteDAOImplArq implements ClienteDAO {
 
     private static final String dir = BancoArqu.getCaminho() + "cliente/cliente.bd";
     private String delimitador = ";";

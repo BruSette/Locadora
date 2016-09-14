@@ -5,7 +5,7 @@ package br.ufmt.ic.locadora.dao.impl.arquivo;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import br.ufmt.ic.locadora.dao.impl.list.*;
+import br.ufmt.ic.locadora.dao.*;
 import br.ufmt.ic.locadora.entidade.Agencia;
 import br.ufmt.ic.locadora.entidade.Endereco;
 import br.ufmt.ic.locadora.entidade.PessoaFisica;
@@ -24,7 +24,7 @@ import java.util.List;
  *
  * @author bruno
  */
-public class AgenciaDAOImplArq extends AgenciaDAO {
+public class AgenciaDAOImplArq implements AgenciaDAO {
 
     private static final String dir = BancoArqu.getCaminho() + "agencia/agencia.bd";
     private String delimitador = ";";
